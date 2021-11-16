@@ -1,0 +1,84 @@
+img.linkedin {
+  height: 33px;
+}
+img.twitter {
+  height: 33px;
+}
+img.twitter:hover {
+  height: 33px;
+  color: aqua;
+  fill: aqua;
+}
+button.btn.btn-outline-success.my-2.px-md-4.nav.my-sm-0{
+  z-index: 1;
+  border-radius: 1px;
+  position: relative;
+  font-size: inherit;
+  font-family: inherit;
+  padding: 0.5em 1em;
+  outline: none;
+  background-color: transparent;
+  overflow: hidden;
+  transition: color 0.4s ease-in-out;
+}
+button.btn.btn-outline-success.my-2.px-md-4.nav.my-sm-0::before{
+  content: '';
+  z-index: -1;
+  position: absolute;
+  top: 100%;
+  right: 100%;
+  width: 2em;
+  height: 1em;
+  border-radius: 50%;
+  background-color: #28a745;
+  transform-origin: center;
+  transform: translate3d(50%, -50%, 0) scale3d(0, 0, 0);
+  transition: transform 0.45s ease-in-out;
+}
+button.btn.btn-outline-success.my-2.px-md-4.nav.my-sm-0:hover{
+  cursor: pointer;
+  color: #fff;
+}
+button.btn.btn-outline-success.my-2.px-md-4.nav.my-sm-0:hover::before {
+  transform: translate3d(50%, -50%, 0) scale3d(15, 15, 15);
+}
+a.font-weight-bold.nav-link.px-md-5.pl-md-0{
+  position: relative;
+}
+a.font-weight-bold.nav-link.px-md-5.pl-md-0::before {
+  content: '';
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #28a745;
+  transform-origin: bottom right;
+  transform: scaleX(0);
+  transition: transform 0.5s ease;
+}
+a.font-weight-bold.nav-link.px-md-5.pl-md-0:hover::before {
+  transform-origin: bottom left;
+  transform: scaleX(1);
+}
+.nav-link.px-md-2.pl-3.pl-md-0.font-weight-bold{
+  position: relative;
+}
+.nav-link.px-md-2.pl-3.pl-md-0.font-weight-bold::before {
+  content: '';
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #28a745;
+  transform-origin: bottom right;
+  transform: scaleX(0);
+  transition: transform 0.5s ease;
+}
+.nav-link.px-md-2.pl-3.pl-md-0.font-weight-bold:hover::before{
+  transform-origin: bottom left;
+  transform: scaleX(1);
+}
